@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Emp_App.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap">
+    <title>Employee Payroll App</title>
+</head>
+    <body>
+        <!----------------UC-1---------------->
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="C:\Users\Prakash Udikeri\BridgeLabz\Day_45-Emp_App\Images\Logo\logo.png" alt="">
+                    <div>
+                        <span class="emp-text">EMPLOYEE</span><br>
+                        <span class="emp-text emp-payroll">PAYROLL</span>
+                    </div>
+            </div>
+        </header>
+         <!----------------UC-2---------------->
+        <div class="main-content">
+            <div class="header-content">
+                <div class="emp-detail-text">Employee Details 
+                    <div class="emp-count">10</div>
+                </div>
+                    <a href="" class="add-button">
+                        <img src="C:\Users\Prakash Udikeri\BridgeLabz\Day_45-Emp_App\Images\Icons\add-24px.svg" alt="">Add User
+                    </a>
+            </div>
+            <div class="table-main">
+                <table class="table" id="display">
+                    <tr>
+                        <th></th>   <th>Name</th>   <th>Gender</th>     <th>Department</th>
+                                    <th>Salary</th> <th>Start Date</th> <th>Actions</th>    
+                    </tr>
+                    <tr>
+                        <td><img class="profile" src="C:\Users\Prakash Udikeri\BridgeLabz\Day_45-Emp_App\Images\Profile Pic\Ellipse -2.png" alt="Pic-1"></td>
+                            <td>Prakash Udikeri</td>
+                            <td>Male</td>
+                            <td><div class="dept-label">HR</div>
+                                <div class="dept-label">Finance</div></td>
+                            <td>3000000</td>
+                            <td>1 Nov 2020</td>
+                            <td>
+                                <img id="1" onclick="remove(this)" src="C:\Users\Prakash Udikeri\BridgeLabz\Day_45-Emp_App\Images\Icons\delete-black-18dp.svg" alt="Delete">
+                                <img id="1" onclick="update(this)" src="C:\Users\Prakash Udikeri\BridgeLabz\Day_45-Emp_App\Images\Icons\create-black-18dp.svg" alt="Edit/Update">
+                            </td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
